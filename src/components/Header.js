@@ -26,8 +26,9 @@ const styles = StyleSheet.create({
     shadowColor: '#292929',
   },
   text: {
-    fontSize: 20,
+    fontSize: 33,
     fontWeight: 900,
-    color: '#310a58'
+    color: '#310a58',
+    textAlign: "center",
   }
 })

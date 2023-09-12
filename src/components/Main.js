@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback
 } from 'react-native';
 import {TrainingDays} from '../utils/TrainingDays.js';
-import DayItem from '../components/DayItem.js'
+import Footer from './Footer.js';
 
 
 export default function Main({navigation}) {
@@ -21,7 +21,7 @@ export default function Main({navigation}) {
       style={styles.main}
     >
       <View style={[styles.box, styles.elevation]}>
-        <Text>Расписание группы НП-2</Text>
+        <Text style={styles.title}>Расписание группы НП-2</Text>
       </View>
       <View>
         <FlatList
@@ -35,14 +35,12 @@ export default function Main({navigation}) {
             </TouchableOpacity>
           )}
         />
+        <Footer />
       </View>
+
     </View>
   );
 }
-
-/*<DayItem item={item} />
-<Text >{item.day}</Text>
-*/
 
 const styles = StyleSheet.create({
   main: {
@@ -73,7 +71,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
   title: {
-    fontSize: 32,
+    fontSize: 26,
     color: 'black'
   },
   button: {

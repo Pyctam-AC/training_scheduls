@@ -7,23 +7,28 @@ function TrainingDay({route}) {
   const secondTraining = (`${route.params.secondtraining.name} - ${route.params.secondtraining.time}`)
 
   return (
-    <View>
-      <Text>{route.params.day}</Text>
-      <Text>{firstTraining}</Text>
-      <Text>{secondTraining}</Text>
+    <View style={styles.container}>
+      <Text style={styles.titleDay}>{route.params.day}</Text>
+      <Text style={styles.nameTraining}>{firstTraining}</Text>
+      <Text style={styles.nameTraining}>{secondTraining}</Text>
     </View>
   );
 };
 
 export default TrainingDay;
 
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: '10%'
+  },
+  titleDay: {
+    fontSize: 26,
+  },
+  nameTraining: {
+    marginTop: '5%',
+    fontSize: 16,
+  }
+});
 
-/* {new Intl.DateTimeFormat('ru-RU', months).format(new Date())}
-
-<Text>{
-        new Intl.DateTimeFormat()
-        .format(new Date())
-        }
-</Text>
-
-*/
