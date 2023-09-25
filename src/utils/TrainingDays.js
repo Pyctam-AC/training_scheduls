@@ -1,4 +1,5 @@
-export const TrainingDays = [
+export const TrainingDays =
+[
   {
     day: "понедельник",
     firsttraining: {
@@ -14,11 +15,11 @@ export const TrainingDays = [
     day: "вторник",
     firsttraining: {
       name:  "ОФП",
-      time: "14.00"
+      time: "13.00"
     },
     secondtraining: {
       name:  "Лёд",
-      time: "13.00"
+      time: "14.00"
     },
   },
   {

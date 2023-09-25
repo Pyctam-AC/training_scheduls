@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   Text,
@@ -10,11 +10,27 @@ import {
 } from 'react-native';
 import {TrainingDays} from '../utils/TrainingDays.js';
 import Footer from './Footer.js';
+import { getScheduls } from '../utils/trainingApi.js';
 
 
 export default function Main({navigation}) {
 
-  const [listOfItems, setlistOfItems] = useState(TrainingDays);
+  //const [listOfItems, setlistOfItems] = useState(TrainingDays);
+
+  const [listOfItems, setlistOfItems] = useState([]);
+
+  const getTraining = () => {
+    getScheduls()
+      .then((res) => {
+        console.log(res)
+        setlistOfItems(res)
+      })
+      .catch((e) => console.log(e))
+  }
+
+  useEffect (() => {
+    getTraining()
+  }, [])
 
   return (
     <View
