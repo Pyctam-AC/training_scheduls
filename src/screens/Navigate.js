@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Main from './Main';
+import HomeScreen from './Home';
 import TrainingDay from './TrainingDay';
 
 import { createStackNavigator } from '@react-navigation/stack';
@@ -12,8 +12,8 @@ return (
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
-        name="Main"
-        component={Main}
+        name="Home"
+        component={HomeScreen}
         options={{ title: "Расписание тренировок" }}
       />
       <Stack.Screen

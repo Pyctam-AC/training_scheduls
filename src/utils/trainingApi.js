@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbyoY8OPrYkQRYOflYtIgbJTftl3MT83cDjbeKe-RfY2CneV0dTzMsgmnIyhurDNn54QNw/exec"
+const url = "https://script.google.com/macros/s/AKfycbwz4pDvQUURwdwJVNPa0KOT5iOxpQjCQcv7eKpE87d3-a4WYuMnLLQv9r5AFsdx8LVCqw/exec"
 
 const getResult = (res) => {
   if (res.ok) {

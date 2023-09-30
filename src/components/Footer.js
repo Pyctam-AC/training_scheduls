@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Footer() {
   return (
     <View>
-      <Text style={styles.titleData}>{new Date().getFullYear()}</Text>
+      <Text style={styles.titleData}>© Rustam Sultangaliev {new Date().getFullYear()}</Text>
     </View>
   );
 }
@@ -12,7 +12,7 @@ export default function Footer() {
 const styles = StyleSheet.create({
   titleData: {
     fontSize: 12,
-    marginTop: '3%',
+    marginTop: '6%',
     textAlign: "center",
   }
 });

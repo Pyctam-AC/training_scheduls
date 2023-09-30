@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "training_schedule",
-    "slug": "training_schedule",
+    "name": "Training Scheduls",
+    "slug": "ttpcTrainingScheduls",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon1.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,8 +18,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "https://github.com/Pyctam-AC/training_scheduls.git",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon1.png",
         "backgroundColor": "#ffffff"
       }
     },
